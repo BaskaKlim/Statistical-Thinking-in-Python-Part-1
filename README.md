@@ -21,3 +21,17 @@ In the last exercise, you made a nice histogram of petal lengths of Iris versico
 **Instructions**
 1. Label the axes. Don't forget that you should always include units in your axis labels. Your y-axis label is just 'count'. Your x-axis label is 'petal length (cm)'. The units are essential!
 2. Display the plot constructed in the above steps using plt.show().
+
+## Adjusting the number of bins in a histogram
+The histogram you just made had ten bins. This is the default of **matplotlib**. The "square root rule" is a commonly-used rule of thumb for choosing number of bins: choose the number of bins to be the square root of the number of samples. Plot the histogram of Iris versicolor petal lengths again, this time using the square root rule for the number of bins. You specify the number of bins using the bins keyword argument of **plt.hist()**.
+
+The plotting utilities are already imported and the seaborn defaults already set. The variable you defined in the last exercise, **versicolor_petal_length**, is already in your namespace.
+
+**Instructions**
+
+1. Import numpy as np. This gives access to the square root function, np.sqrt().
+2. Determine how many data points you have using len().
+3. Compute the number of bins using the square root rule.
+4. Convert the number of bins to an integer using the built in int() function.
+5. Generate the histogram and make sure to use the bins keyword argument.
+6. Hit 'Submit Answer' to plot the figure and see the fruit of your labors!
