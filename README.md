@@ -93,7 +93,7 @@ To overlay all three ECDFs on the same plot, you can use plt.plot() three times,
 3. A legend and axis labels have been added for you, so hit 'Submit Answer' to see all the ECDFs!
 
 ## Computing means
-The mean of all measurements gives an indication of the typical magnitude of a measurement. It is computed using np.mean().
+The mean of all measurements gives an indication of the typical magnitude of a measurement. It is computed using **np.mean().**
 
 **Instructions**
 
