@@ -91,3 +91,11 @@ To overlay all three ECDFs on the same plot, you can use plt.plot() three times,
 1. Compute ECDFs for each of the three species using your ecdf() function. The variables setosa_petal_length, versicolor_petal_length, and virginica_petal_length are all in your namespace. Unpack the ECDFs into x_set, y_set, x_vers, y_vers and x_virg, y_virg, respectively.
 2. Plot all three ECDFs on the same plot as dots. To do this, you will need three plt.plot() commands. Assign the result of each to _.
 3. A legend and axis labels have been added for you, so hit 'Submit Answer' to see all the ECDFs!
+
+## Computing means
+The mean of all measurements gives an indication of the typical magnitude of a measurement. It is computed using np.mean().
+
+**Instructions**
+
+1. Compute the mean petal length of Iris versicolor from Anderson's classic data set. The variable versicolor_petal_length is provided in your namespace. Assign the mean to mean_length_vers.
+2. Hit submit to print the result.
