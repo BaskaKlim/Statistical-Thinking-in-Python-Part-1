@@ -72,3 +72,13 @@ Compute the number of data points, n, using the len() function.
 2. The x-values are the sorted data. Use the np.sort() function to perform the sorting.
 3. The y data of the ECDF go from 1/n to 1 in equally spaced increments. You can construct this using np.arange(). Remember, however, that the end value in np.arange() is not inclusive. Therefore, np.arange() will need to go from 1 to n+1. Be sure to divide this by n.
 4. The function returns the values x and y.
+
+## Plotting the ECDF
+You will now use your **ecdf()** function to compute the ECDF for the petal lengths of Anderson's Iris versicolor flowers. You will then plot the ECDF. Recall that your ecdf() function returns two arrays so you will need to unpack them. An example of such unpacking is **x, y = foo(data)**, for some function foo().
+
+**IInstructions**
+
+1. Use ecdf() to compute the ECDF of versicolor_petal_length. Unpack the output into x_vers and y_vers.
+2. Plot the ECDF as dots. Remember to include marker = '.' and linestyle = 'none' in addition to x_vers and y_vers as arguments inside plt.plot().
+3. Label the axes. You can label the y-axis 'ECDF'.
+4. Show your plot.
