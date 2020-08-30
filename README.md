@@ -99,3 +99,13 @@ The mean of all measurements gives an indication of the typical magnitude of a m
 
 1. Compute the mean petal length of Iris versicolor from Anderson's classic data set. The variable versicolor_petal_length is provided in your namespace. Assign the mean to mean_length_vers.
 2. Hit submit to print the result.
+
+
+##  Computing percentiles
+In this exercise, you will compute the percentiles of petal length of Iris versicolor.
+
+**Instructions**
+
+1. Create percentiles, a NumPy array of percentiles you want to compute. These are the 2.5th, 25th, 50th, 75th, and 97.5th. You can do so by creating a list containing these ints/floats and convert the list to a NumPy array using np.array(). For example, np.array([30, 50]) would create an array consisting of the 30th and 50th percentiles.
+2. Use np.percentile() to compute the percentiles of the petal lengths from the Iris versicolor samples. The variable versicolor_petal_length is in your namespace.
+3. Print the percentiles.
