@@ -133,3 +133,14 @@ In the IPython Shell, you can use sns.boxplot? or help(sns.boxplot) for more det
 1. The set-up is exactly the same as for the bee swarm plot; you just call sns.boxplot() with the same keyword arguments as you would sns.swarmplot(). The x-axis is 'species' and y-axis is 'petal length (cm)'.
 2. Don't forget to label your axes!
 3. Display the figure using the normal call.
+
+## Computing the variance
+It is important to have some understanding of what commonly-used functions are doing under the hood. Though you may already know how to compute variances, this is a beginner course that does not assume so. In this exercise, we will explicitly compute the variance of the petal length of Iris veriscolor using the equations discussed in the videos. We will then use np.var() to compute it.
+
+**Instructions**
+
+1. Create an array called differences that is the difference between the petal lengths (versicolor_petal_length) and the mean petal length. The variable versicolor_petal_length is already in your namespace as a NumPy array so you can take advantage of NumPy's vectorized operations.
+2. Square each element in this array. For example, x**2 squares each element in the array x. Store the result as diff_sq.
+3. Compute the mean of the elements in diff_sq using np.mean(). Store the result as variance_explicit.
+4. Compute the variance of versicolor_petal_length using np.var(). Store the result as variance_np.
+5. Print both variance_explicit and variance_np in one print call to make sure they are consistent.
