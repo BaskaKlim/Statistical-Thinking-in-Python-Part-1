@@ -36,8 +36,6 @@ The plotting utilities are already imported and the seaborn defaults already set
 5. Generate the histogram and make sure to use the bins keyword argument.
 6. Hit 'Submit Answer' to plot the figure and see the fruit of your labors!
 
- 
-
 ## Bee swarm plot
 Make a bee swarm plot of the iris petal lengths. Your x-axis should contain each of the three species, and the y-axis the petal lengths. A data frame containing the data is in your namespace as df.
 
@@ -82,3 +80,14 @@ You will now use your **ecdf()** function to compute the ECDF for the petal leng
 2. Plot the ECDF as dots. Remember to include marker = '.' and linestyle = 'none' in addition to x_vers and y_vers as arguments inside plt.plot().
 3. Label the axes. You can label the y-axis 'ECDF'.
 4. Show your plot.
+
+## Comparison of ECDFs
+ECDFs also allow you to compare two or more distributions (though plots get cluttered if you have too many). Here, you will plot ECDFs for the petal lengths of all three iris species. You already wrote a function to generate ECDFs so you can put it to good use!
+
+To overlay all three ECDFs on the same plot, you can use plt.plot() three times, once for each ECDF. Remember to include **marker='.'** and **linestyle='none'** as arguments inside **plt.plot()**.
+
+**Instructions**
+
+1. Compute ECDFs for each of the three species using your ecdf() function. The variables setosa_petal_length, versicolor_petal_length, and virginica_petal_length are all in your namespace. Unpack the ECDFs into x_set, y_set, x_vers, y_vers and x_virg, y_virg, respectively.
+2. Plot all three ECDFs on the same plot as dots. To do this, you will need three plt.plot() commands. Assign the result of each to _.
+3. A legend and axis labels have been added for you, so hit 'Submit Answer' to see all the ECDFs!
