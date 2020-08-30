@@ -55,3 +55,20 @@ In the IPython Shell, you can use sns.swarmplot? or help(sns.swarmplot) for more
 2. Use sns.swarmplot() to make a bee swarm plot from the DataFrame containing the Fisher iris data set, df. The x-axis should contain each of the three species, and the y-axis should contain the petal lengths.
 3. Label the axes.
 4. Show your plot.
+
+## Computing the ECDF
+In this exercise, you will write a function that takes as input a 1D array of data and then returns the x and y values of the ECDF. You will use this function over and over again throughout this course and its sequel. ECDFs are among the most important plots in statistical analysis. You can write your own function, foo(x,y) according to the following skeleton:
+def foo(a,b):
+   *"""State what function does here"""
+    # Computation performed here
+    return x, y*
+ 
+The function foo() above takes two arguments a and b and returns two values x and y. The function header **def foo(a,b):** contains the function signature foo(a,b), which consists of the function name, along with its parameters.
+
+**Instructions**
+
+1. Define a function with the signature ecdf(data). Within the function definition,
+Compute the number of data points, n, using the len() function.
+2. The x-values are the sorted data. Use the np.sort() function to perform the sorting.
+3. The y data of the ECDF go from 1/n to 1 in equally spaced increments. You can construct this using np.arange(). Remember, however, that the end value in np.arange() is not inclusive. Therefore, np.arange() will need to go from 1 to n+1. Be sure to divide this by n.
+4. The function returns the values x and y.
