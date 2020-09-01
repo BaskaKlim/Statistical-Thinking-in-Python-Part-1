@@ -166,3 +166,14 @@ _ = plt.ylabel('percent of vote for Obama')*
 1. Use plt.plot() with the appropriate keyword arguments to make a scatter plot of versicolor petal length (x-axis) versus petal width (y-axis). The variables versicolor_petal_length and versicolor_petal_width are already in your namespace. Do not forget to use the marker='.' and linestyle='none' keyword arguments.
 2. Label the axes.
 3. Display the plot.
+
+## Computing the covariance
+The covariance may be computed using the Numpy function np.cov(). For example, we have two sets of data **x and y, np.cov(x, y)** returns a 2D array where entries [0,1] and [1,0] are the covariances. Entry [0,0] is the variance of the data in x, and entry [1,1] is the variance of the data in y. This 2D output array is called the covariance matrix, since it organizes the self- and covariance.
+To remind you how the I. versicolor petal length and width are related, we include the scatter plot you generated in a previous exercise.
+
+**Instructions**
+
+1. Use np.cov() to compute the covariance matrix for the petal length (versicolor_petal_length) and width (versicolor_petal_width) of I. versicolor.
+2. Print the covariance matrix.
+3. Extract the covariance from entry [0,1] of the covariance matrix. Note that by symmetry, entry [1,0] is the same as entry [0,1].
+4. Print the covariance.
