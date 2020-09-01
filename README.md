@@ -144,3 +144,12 @@ It is important to have some understanding of what commonly-used functions are d
 3. Compute the mean of the elements in diff_sq using np.mean(). Store the result as variance_explicit.
 4. Compute the variance of versicolor_petal_length using np.var(). Store the result as variance_np.
 5. Print both variance_explicit and variance_np in one print call to make sure they are consistent.
+
+##  The standard deviation and the variance
+As mentioned in the video, the standard deviation is the square root of the variance. You will see this for yourself by computing the standard deviation using np.std() and comparing it to what you get by computing the variance with np.var() and then computing the square root.
+
+**Instructions**
+
+1. Compute the variance of the data in the versicolor_petal_length array using np.var() and store it in a variable called variance.
+2. Print the square root of this value.
+3. Print the standard deviation of the data in the versicolor_petal_length array using np.std().
